@@ -4,21 +4,16 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Wpisz podstawę trójkąta: ");
-    Scanner scanner = new Scanner(System.in);
-
-    int a = scanner.nextInt();
+      Scanner scanner = new Scanner(System.in);
     
-    for (int i = 1; i <= a; i++){
-      if (i == a){
+      int a = scanner.nextInt();
+     
+      for (int i = 1; i <= 5; i++){
+        System.out.print(" ".repeat(a - i));
         System.out.println("*".repeat(i));
-      } else if (i == a - (a-1) || i == a - a - (a-2)){
-        System.out.println("*".repeat(i));
-      } else {
-        System.out.println("*".repeat(1) + " ".repeat(i-2) + "*".repeat(1));
       }
     }
-  }
+  
 
   // @Test
   // void addition() {
